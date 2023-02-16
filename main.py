@@ -19,9 +19,11 @@ def find_mismatch(text):
                 return i+1
             if not are_matching(opening_brackets_stack[-1].char,next): 
                 return i+1
+            opening_brackets_stack.pop()
     if opening_brackets_stack: 
         return opening_brackets_stack[-1].position
-    else: return "Success"
+    else: 
+        return "Success"
 
 
 def main():
