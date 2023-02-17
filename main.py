@@ -47,6 +47,5 @@ def main():
     else: print("Input error")
 
 
-
 if __name__ == "__main__":
     main()
